@@ -10,7 +10,6 @@ PragmaticLM is an advanced language model designed to extract hidden user intent
 - [Usage](#usage)
 - [Training & Fine-Tuning](#training--fine-tuning)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -39,7 +38,7 @@ git clone https://github.com/mohammad17ali/PragmaticLM/.git
 cd PragmaticLM
 pip install -r requirements.txt
 ```
-Usage
+## Usage
 Below is a quick example of how to use PragmaticLM for prompt refinement:
 
 ```python
@@ -57,10 +56,10 @@ refined_prompt = model.refine_prompt(raw_prompt)
 print("Refined Prompt:", refined_prompt)
 ```
 
-Training & Fine-Tuning
+## Training & Fine-Tuning
 For fine-tuning PragmaticLM on your specific dataset, refer to our training guide for detailed instructions on setting up the environment, preparing data, and initiating training.
 
-Contributing
+## Contributing
 We welcome contributions from the community! If you'd like to contribute:
 
 Fork the repository.
