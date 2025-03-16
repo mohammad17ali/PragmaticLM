@@ -38,3 +38,33 @@ Clone the repository and install the required dependencies:
 git clone https://github.com/mohammad17ali/PragmaticLM/.git
 cd PragmaticLM
 pip install -r requirements.txt
+```
+Usage
+Below is a quick example of how to use PragmaticLM for prompt refinement:
+
+```python
+from pragmaticlm import PragmaticLM, load_tokenizer
+
+# Load the model and tokenizer
+model = PragmaticLM.from_pretrained("path/to/pretrained/model")
+tokenizer = load_tokenizer("path/to/tokenizer")
+
+# Example prompt
+raw_prompt = "summarize: The T5 model is a transformer-based model that was pre-trained on a mixture of tasks."
+
+# Refine the prompt using PragmaticLM
+refined_prompt = model.refine_prompt(raw_prompt)
+print("Refined Prompt:", refined_prompt)
+```
+
+Training & Fine-Tuning
+For fine-tuning PragmaticLM on your specific dataset, refer to our training guide for detailed instructions on setting up the environment, preparing data, and initiating training.
+
+Contributing
+We welcome contributions from the community! If you'd like to contribute:
+
+Fork the repository.
+Create a new branch for your feature or bug fix.
+Submit a pull request with a clear description of your changes.
+Please read our CONTRIBUTING.md for more details.
+
